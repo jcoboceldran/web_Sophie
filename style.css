@@ -62,6 +62,30 @@ p, a {
 
 /*------------------------------------------------------------------------------------------------------------*/
 
+.half-circle-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.half-circle {
+  width: 200px; /* Adjust the width of the circle */
+  height: 100px; /* Adjust the height of the circle */
+  border-radius: 100% 100% 0 0; /* This creates a half-circle */
+  background-color: var(--secondary-color); /* Adjust the background color */
+  position: relative;
+}
+
+.half-circle p {
+  padding-top: 15%;
+  text-align: center;
+  color: var(--primary-color); /* Adjust the text color */
+  line-height: 50px; /* Adjust the line height to vertically center the text */
+  margin: 0;
+  font-size: 1.2em;
+}
+
 /*Main*/
 
 .header {
@@ -70,6 +94,17 @@ p, a {
   display: flex;
   font-size: 1.8em;
   font-weight: 800;
+}
+
+.header-icon {
+  height: 30%;
+  width: auto;
+  margin-right: 3%;
+}
+
+.header-icon:hover {
+  rotate: 3600deg;
+  transition: 5s;
 }
 
 .name-div{
@@ -95,7 +130,7 @@ p, a {
   font-style: italic;
 }
 
-.projects:hover {
+.works:hover {
   font-style: italic;
 }
 
@@ -136,7 +171,14 @@ p, a {
   width: 40%;
 }
 
+.work-img img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
 .work-title {
+  padding-left: 3%;
   width: 40%;
   margin-right: 20%;
   text-align: left;
@@ -146,5 +188,56 @@ p, a {
 .work-arrow {
   font-size: 2em;
 }
+
+.work-arrow p:hover {
+  font-size: 1.1em;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+/*Footer*/
+
+.footer {
+  width: auto;
+  height: 50%;
+  background-color: var(--secondary-color);
+  padding: 7.5%;
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.email {
+  font-size: 6em;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+.email:hover {
+  font-style: italic;
+}
+
+.curriculum {
+  font-size: 6em;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+.curriculum:hover {
+  font-style: italic;
+}
+
+.linkedin {
+  font-size: 6em;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+.linkedin:hover {
+  font-style: italic;
+}
+
 
 
