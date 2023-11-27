@@ -1,10 +1,17 @@
-@media only screen and (min-width: 1200px){
-  /*Global*/
+/*:root {
+  --primary-color: #031307;
+  --secondary-color: #E8FAC6;
+}
+*/
 
   :root {
     --secondary-color: #041B0A;
     --primary-color: #E8FAC6;
   }
+
+
+@media only screen and (min-width: 1200px) {
+  /*Global*/
 
   html, body {
     height: 100%;
@@ -43,7 +50,7 @@
   }
 
   .page {
-    background: url('background2.png') center/60% no-repeat;
+    background: url('favicon.png') center/60% no-repeat;
     width: auto;
     height: 100vh;
     padding-left: 20%;
@@ -265,14 +272,9 @@
 
 }
 
-@media only screen and (max-width: 1200px) and (min-width: 850px){
+@media only screen and (max-width: 1200px) and (min-width: 850px) {
 
   /*Global*/
-
-  :root {
-    --secondary-color: #041B0A;
-    --primary-color: #E8FAC6;
-  }
 
   html, body {
     height: 100%;
@@ -521,11 +523,6 @@
 @media only screen and (max-width: 850px) {
 
   /*Global*/
-
-  :root {
-    --secondary-color: #041B0A;
-    --primary-color: #E8FAC6;
-  }
 
   html, body {
     height: 100%;
