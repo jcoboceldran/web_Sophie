@@ -13,79 +13,84 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="english">
-        <header>
-            <h2>SOPHIE CASTILLO</h2>
-            <nav>
-                <a href="#footer">SPANISH</a>
-            </nav>
-        </header>
+    <header>
+        <h2>SOPHIE CASTILLO</h2>
+        <nav>
+            <a href="#footer">SPANISH</a>
+        </nav>
+    </header>
 
-        <section id="main">
+    <section id="main">
+        <div>
+            <a href="#about-me">01 ABOUT ME</a>
+            <a href="#works">02 WORKS</a>
+            <a href="#footer">03 CONTACT</a>
+        </div>
+        <h1>ENGINEERING A<br>CLEANER FUTURE</h1>
+    </section>
+
+    <section id="about-me">
+        <article> 
+            <h3>01 ABOUT ME</h3>
+            <p>I am Sophie Castillo, a Masters student currently attending the University of California Berkeley in the Environmental 
+                Engineering Program. My focus is in air pollution (specifical automotive emissions like Nitrogen Oxides, Black Carbon, 
+                and Particulate Matter) and climate change mitigation, however I have training/academic experience in the fields of water 
+                quality, remediation, energy systems, and environmental design. I am deeply passionate about finding ways to effectively 
+                minimize pollutant emissions to protect human health and the quality of our environment, but I aim to do so in a way that 
+                doesn't disrupt  natural processes or the emotional and mental wellbeing of the targeted populations. </p>
+        </article>
+        <article>
+            <h3 class="section-title">02 EDUCATION</h3>
             <div>
-                <a href="#about-me">01 ABOUT ME</a>
-                <a href="#works">02 WORKS</a>
-                <a href="#footer">03 CONTACT</a>
+                <h4>2023 - 2024</h4>
+                <p>University of California Berkeley<br>Master of Science in Environmental Engineering </p>
             </div>
-            <h1>ENGINEERING A<br>CLEANER FUTURE</h1>
-        </section>
-
-        <section id="about-me">
-            <article> 
-                <h3>01 ABOUT ME</h3>
-                <p>I am Sophie Castillo, a Masters student currently attending the University of California Berkeley in the Environmental 
-                    Engineering Program. My focus is in air pollution (specifical automotive emissions like Nitrogen Oxides, Black Carbon, 
-                    and Particulate Matter) and climate change mitigation, however I have training/academic experience in the fields of water 
-                    quality, remediation, energy systems, and environmental design. I am deeply passionate about finding ways to effectively 
-                    minimize pollutant emissions to protect human health and the quality of our environment, but I aim to do so in a way that 
-                    doesn't disrupt  natural processes or the emotional and mental wellbeing of the targeted populations. </p>
-            </article>
-            <article>
-                <h3 class="section-title">02 EDUCATION</h3>
-                <div>
-                    <h4>2023 - 2024</h4>
-                    <p>University of California Berkeley<br>Master of Science in Environmental Engineering </p>
-                </div>
-                <div>
-                    <h4>2019-2023</h4>
-                    <p>University of Colorado Boulder<br>Bachelor of Science in Environmental Engineering, Minor in Global Engineering</p>
-                </div>
-                <div>
-                    <h4>Aug. 2021-Dec. 2021</h4>
-                    <p>Carlos III University of Madrid, Spain<br>Study Abroad, Mechanical Engineering Program</p>
-                </div>
-            </article>
-            <article>
-                <h3 class="section-title">03 HONORS AND AWARDS</h3>
-                <div>
-                    <h4>2023 - 2025</h4>
-                    <p>Chancellor’s Fellowship<br>University of California Berkeley</p>
-                </div>
-                <div>
-                    <h4>2023 - 20??</h4>
-                    <p>GEM Associate Fellow<br>University of California Berkeley</p>
-                </div>
-                <div>
-                    <h4>Aug. 2021-Dec. 2021</h4>
-                    <p>Global Engagement Award Recipient<br>University of Colorado Boulder College of Engineering and Applied Science</p>
-                </div>
-            </article>
-        </section>
-
-        <footer id="footer">
-            <p>Let's get in touch!</p>
             <div>
-                <a href="mailto:sophie_castillo@berkeley.edu " class="email">Email</a>
-                <a href="tel:+17204010128" class="number">+1 (720) 401-0128</a>
-                <a href="https://www.linkedin.com/in/sophie-castillo/" class="linkedin">LinkedIn</a>
-                <a href="CV.pdf"class="curriculum">Curriculum</a>
+                <h4>2019-2023</h4>
+                <p>University of Colorado Boulder<br>Bachelor of Science in Environmental Engineering, Minor in Global Engineering</p>
             </div>
-        </footer>
-    </div>
+            <div>
+                <h4>Aug. 2021-Dec. 2021</h4>
+                <p>Carlos III University of Madrid, Spain<br>Study Abroad, Mechanical Engineering Program</p>
+            </div>
+        </article>
+        <article>
+            <h3 class="section-title">03 HONORS AND AWARDS</h3>
+            <div>
+                <h4>2023 - 2025</h4>
+                <p>Chancellor’s Fellowship<br>University of California Berkeley</p>
+            </div>
+            <div>
+                <h4>2023 - 20??</h4>
+                <p>GEM Associate Fellow<br>University of California Berkeley</p>
+            </div>
+            <div>
+                <h4>Aug 2021 - Dec. 2021</h4>
+                <p>Global Engagement Award Recipient<br>University of Colorado Boulder College of Engineering and Applied Science</p>
+            </div>
+        </article>
+        <article id="research">
+            <h3 class="section-title">04 RESEARCH EXPERIENCE (click to see more)</h3>
+            <div>
+                <h4>June 2022 - Aug 2022 </h4>
+                <p onclick="goResearch()">Intern for RECETAS Research Group, ISGlobal Barcelona</p>
+            </div>
+        </article>
+    </section>
+
+    <footer id="footer">
+        <p>Let's get in touch!</p>
+        <div>
+            <a href="mailto:sophie_castillo@berkeley.edu " class="email">Email</a>
+            <a href="tel:+17204010128" class="number">+1 (720) 401-0128</a>
+            <a href="https://www.linkedin.com/in/sophie-castillo/" class="linkedin">LinkedIn</a>
+            <a href="CV.pdf"class="curriculum">Curriculum</a>
+        </div>
+    </footer>
 
     <script>
-        function changeToSpanish() {
-            window.location.href = "index_es.html";
+        function goResearch() {
+            window.location.href = "work.html";
         }
     </script>
 </body>
