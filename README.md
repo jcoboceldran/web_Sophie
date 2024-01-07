@@ -1,1 +1,1 @@
-# Portfolio web page for Juan Cobo
+# Portfolio web page for Sophie Castillo
